@@ -183,7 +183,7 @@ class CustomTwilioVideoView extends Component {
     encodingParameters = {},
   }) {
     this.runCommand(nativeEvents.connectToRoom, [
-      roomName,
+      roomName || "",
       accessToken,
       enableAudio,
       enableVideo,
